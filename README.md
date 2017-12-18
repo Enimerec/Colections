@@ -35,7 +35,11 @@ Implementacjami sa TreeSet i Tree Map.
 * Zaimplementowac metody: dodawanie n elementów na poczatek listy, usuwanie n elementow z poczatku listy,
 odczytywanie wszystkich n elementów listy, metody przyjmuja parametr 
 typu List<Integer>
-* Porównać czas wykowania powyszych metod dla LinkedList i ArrayList
+* Porównać czas wykowania powyszych metod dla LinkedList i ArrayList.
+
 ## Do których kolekcji można wstawiać wartości null?
 
 ## Napisać operacje wykorzystującą różne implementacje Set i sprawdzić różnice w operacjach dodawania do zbioru
+
+* Napisac program w ktorym do zbioru zostane dodanych kilka wyrazów, a nastepnie wysiwetlona zostanie zawartosc zbioru (for-each).
+* Sprawdzic rożnice pomiedzy HashSet, TreeSet,
