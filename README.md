@@ -42,4 +42,7 @@ typu List<Integer>
 ## Napisać operacje wykorzystującą różne implementacje Set i sprawdzić różnice w operacjach dodawania do zbioru
 
 * Napisac program w ktorym do zbioru zostane dodanych kilka wyrazów, a nastepnie wysiwetlona zostanie zawartosc zbioru (for-each).
-* Sprawdzic rożnice pomiedzy HashSet, TreeSet,
+* Sprawdzic rożnice pomiedzy HashSet, TreeSet, LinkedHashSet.
+* HashSet niema gwarancji odnosnie porzadku.
+* TreeSet drzewo przechowuje elementy zgodnie z wartoscia.
+* LinkedHashSet przechowuje elementy zgodznie z kolejnoscia wstawiania.

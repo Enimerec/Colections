@@ -1,9 +1,6 @@
 package pl.sda;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class SetOperatons {
 
@@ -14,7 +11,8 @@ public class SetOperatons {
 
         System.out.println("------");
 
-        Set<String>TreeSet = new TreeSet<>();
+        Comparator comparator = new Comparator();
+        Set<String>TreeSet = new TreeSet<>(comparator);
         fillset(TreeSet);
         show(TreeSet);
 
@@ -25,17 +23,30 @@ public class SetOperatons {
         show(LinkedHashSet);
     }
     public static void fillset(Set<String>set){
-        set.add("Adam");
+        set.add("Franciszek");
         set.add("Beata");
         set.add("Celina");
         set.add("Dariusz");
         set.add("Elna");
-        set.add("Franciszek");
+        set.add("Adam");
     }
 
     public static void show(Set<String>set){
         for (String s:set) {
             System.out.println(s);
+        }
+    }
+}
+
+class Comparator implements java.util.Comparator<String>{
+
+    @Override
+    public int compare(String o1, String o2) {
+        int size = o1.length() - o2.length();
+        if(size != 0){
+            return size;
+        }else{
+            return o1.compareTo(o2);
         }
     }
 }
